@@ -123,21 +123,18 @@ export function MinimalistProjects() {
 											</Button>
 										</Link>
 									) : (
-										<Link
-											href={project.githubUrl}
-											className="flex-1"
+										<Button
+											disabled
+											className="flex-1 py-2 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 rounded-lg text-sm cursor-not-allowed"
 										>
-											<Button className="w-full py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors text-sm">
-												<Github className="w-4 h-4 mr-2" />
-												View Code
-											</Button>
-										</Link>
+											Live Demo
+										</Button>
 									)}
 
 									<Link href={project.githubUrl}>
 										<Button
 											variant="outline"
-											className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm"
+											className="px-4 py-2 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors text-sm"
 										>
 											<Github className="w-4 h-4" />
 										</Button>
