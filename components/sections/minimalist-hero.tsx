@@ -4,30 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const skillOrbs = [
-	{
-		text: "ML",
-		position: "top-1/2 left-10",
-		colors: "from-blue-400 to-blue-600",
-		size: "w-16 h-16",
-		delay: 0,
-	},
-	{
-		text: "React",
-		position: "top-1/3 right-10",
-		colors: "from-green-400 to-green-600",
-		size: "w-20 h-20",
-		delay: -2,
-	},
-	{
-		text: "AI",
-		position: "bottom-1/3 left-1/4",
-		colors: "from-purple-400 to-purple-600",
-		size: "w-12 h-12",
-		delay: -4,
-	},
-];
-
 export function MinimalistHero() {
 	return (
 		<section
@@ -88,30 +64,6 @@ export function MinimalistHero() {
 						</Link>
 					</motion.div>
 				</motion.div>
-
-				{/* Floating Skills Orbs */}
-				{skillOrbs.map((orb, index) => (
-					<motion.div
-						key={orb.text}
-						className={`absolute hidden lg:block ${orb.position}`}
-						animate={{
-							y: [0, -20, 0],
-							rotate: [0, 5, -5, 0],
-						}}
-						transition={{
-							duration: 6,
-							repeat: Infinity,
-							ease: "easeInOut",
-							delay: orb.delay,
-						}}
-					>
-						<div
-							className={`${orb.size} bg-gradient-to-r ${orb.colors} rounded-full flex items-center justify-center text-white font-bold shadow-lg backdrop-blur-sm`}
-						>
-							{orb.text}
-						</div>
-					</motion.div>
-				))}
 			</div>
 		</section>
 	);

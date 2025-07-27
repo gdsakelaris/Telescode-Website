@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -12,7 +13,7 @@ const projects = [
 		description:
 			"Machine learning model achieving 77% accuracy in predicting UFC fight outcomes.",
 		gradient: "from-primary-500 to-purple-600",
-		icon: "🥊",
+		image: "/images/ufc-models.png", // Replace with your image path
 		tags: ["Python", "XGBoost", "ML"],
 		githubUrl: "https://github.com/gdsakelaris",
 		liveUrl: null,
@@ -34,7 +35,7 @@ const projects = [
 		description:
 			"AI-driven web application that generates concise summaries of YouTube videos.",
 		gradient: "from-purple-400 to-pink-500",
-		icon: "🤖",
+		image: "/images/sumtube-example.png",
 		tags: ["Python", "OpenAI", "Django"],
 		githubUrl: "https://github.com/gdsakelaris",
 		liveUrl: null,
@@ -76,9 +77,18 @@ export function MinimalistProjects() {
 						>
 							<div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300">
 								<div
-									className={`h-48 bg-gradient-to-br ${project.gradient} rounded-lg mb-6 flex items-center justify-center relative overflow-hidden`}
+									className={`aspect-video bg-gradient-to-br ${project.gradient} rounded-lg mb-6 flex items-center justify-center relative overflow-hidden`}
 								>
-									<div className="text-6xl">{project.icon}</div>
+									{project.image ? (
+										<Image
+											src={project.image}
+											alt={project.title}
+											fill
+											className="object-cover"
+										/>
+									) : (
+										<div className="text-6xl">{project.icon}</div>
+									)}
 									<div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]"></div>
 								</div>
 
