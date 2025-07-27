@@ -18,7 +18,7 @@ export function Navbar() {
 		{ name: "About", href: pathname === "/" ? "#about" : "/#about" },
 		{ name: "Projects", href: pathname === "/" ? "#projects" : "/#projects" },
 		{ name: "Contact", href: pathname === "/" ? "#contact" : "/#contact" },
-		{ name: "Blog", href: "/about" },
+		{ name: "About Me", href: "/about" },
 	];
 
 	React.useEffect(() => {
