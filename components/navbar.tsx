@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-
-const navigation = [
-	{ name: "Home", href: "#home" },
-	{ name: "About", href: "#about" },
-	{ name: "Projects", href: "#projects" },
-	{ name: "Contact", href: "#contact" },
-	{ name: "Blog", href: "/about" },
-];
 
 export function Navbar() {
 	const [isOpen, setIsOpen] = React.useState(false);
 	const pathname = usePathname();
+
+	// Dynamic navigation based on current page
+	const navigation = [
+		{ name: "Home", href: pathname === "/" ? "#home" : "/#home" },
+		{ name: "About", href: pathname === "/" ? "#about" : "/#about" },
+		{ name: "Projects", href: pathname === "/" ? "#projects" : "/#projects" },
+		{ name: "Contact", href: pathname === "/" ? "#contact" : "/#contact" },
+		{ name: "Blog", href: "/about" },
+	];
 
 	React.useEffect(() => {
 		setIsOpen(false);
@@ -75,12 +75,10 @@ export function Navbar() {
 								)}
 							</Link>
 						))}
-						<ThemeToggle />
 					</div>
 
 					{/* Mobile menu button */}
 					<div className="flex items-center md:hidden">
-						<ThemeToggle />
 						<Button
 							variant="ghost"
 							size="icon"

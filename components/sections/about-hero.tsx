@@ -27,7 +27,7 @@ export function AboutHero() {
 						</h1>
 
 						<p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-							George (Daniel) Sakelaris - Software Engineer & Entrepreneur
+							George Sakelaris - Software Engineer & Entrepreneur
 						</p>
 
 						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">

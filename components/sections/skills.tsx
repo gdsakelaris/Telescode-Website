@@ -258,7 +258,7 @@ export function Skills() {
 						{/* HIGH5 Strengths */}
 						<div className="rounded-2xl bg-gradient-to-br from-green-50 to-emerald-50 p-6 dark:from-green-950/50 dark:to-emerald-950/50">
 							<h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-								Top 5 Strengths
+								HIGH5 Strengths
 							</h4>
 							<div className="mt-4 space-y-2">
 								{[
