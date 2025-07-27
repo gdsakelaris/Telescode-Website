@@ -14,7 +14,7 @@ const socialLinks = [
 	},
 	{
 		name: "Email",
-		href: "mailto:gdsakelaris@gmail.com",
+		href: "mailto:gdsakelari6@gmail.com",
 		icon: Mail,
 	},
 ];
@@ -23,8 +23,8 @@ const footerLinks = {
 	Company: [
 		{ name: "About", href: "/#about" },
 		{ name: "Projects", href: "/#projects" },
-		{ name: "Blog", href: "/#blog" },
 		{ name: "Contact", href: "/#contact" },
+		{ name: "Blog", href: "/about" },
 	],
 	Services: [
 		{ name: "Web Development", href: "/#contact" },
@@ -101,7 +101,7 @@ export function Footer() {
 						<p className="text-sm text-gray-500 dark:text-gray-400">
 							© {new Date().getFullYear()} Telescode LLC. All rights reserved.
 						</p>
-						<div className="mt-4 flex space-x-6 sm:mt-0">
+						{/* <div className="mt-4 flex space-x-6 sm:mt-0">
 							<Link
 								href="/privacy"
 								className="text-sm text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
@@ -114,7 +114,7 @@ export function Footer() {
 							>
 								Terms of Service
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

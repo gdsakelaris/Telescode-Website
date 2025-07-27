@@ -27,28 +27,33 @@ export function AboutHero() {
 						</h1>
 
 						<p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-							Daniel Sakelaris - Software Engineer & Entrepreneur
+							George (Daniel) Sakelaris - Software Engineer & Entrepreneur
 						</p>
 
 						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">
 							<p>
-								Hey there! I'm Daniel, a software engineer driven by curiosity and a passion for turning 
-								complex ideas into elegant solutions. My journey started with a Computer Science degree 
-								from DePaul University and has taken me through everything from machine learning models 
-								that predict UFC fights to building enterprise applications.
+								Hey there! I'm Daniel, a software engineer driven by curiosity
+								and a passion for turning complex ideas into elegant solutions.
+								My journey started with a Computer Science degree from DePaul
+								University and has taken me through everything from machine
+								learning models that predict UFC fights to building enterprise
+								applications.
 							</p>
 
 							<p>
-								What really drives me is the intersection of technology and real-world impact. Whether 
-								I'm developing a machine learning model with 77% accuracy or architecting cloud solutions, 
-								I'm always asking: "How can this make a meaningful difference?" Outside of coding, 
-								you'll find me on the mats training Brazilian Jiu-Jitsu or diving deep into sports analytics.
+								What really drives me is the intersection of technology and
+								real-world impact. Whether I'm developing a machine learning
+								model with 77% accuracy or architecting cloud solutions, I'm
+								always asking: "How can this make a meaningful difference?"
+								Outside of coding, you'll find me on the mats training Brazilian
+								Jiu-Jitsu or diving deep into sports analytics.
 							</p>
-							
+
 							<p>
-								I founded Telescode LLC to combine my technical expertise with my entrepreneurial spirit - 
-								creating solutions that don't just work, but truly solve problems. Every project is a 
-								chance to learn something new and push the boundaries of what's possible.
+								I founded Telescode LLC to combine my technical expertise with
+								my entrepreneurial spirit - creating solutions that don't just
+								work, but truly solve problems. Every project is a chance to
+								learn something new and push the boundaries of what's possible.
 							</p>
 						</div>
 
