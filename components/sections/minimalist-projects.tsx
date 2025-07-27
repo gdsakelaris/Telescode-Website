@@ -20,23 +20,23 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: "Software Sack",
-		description:
-			"Online software marketplace with React frontend and AWS backend.",
-		gradient: "from-green-400 to-blue-500",
-		icon: "💼",
-		tags: ["React", "AWS", "Stripe"],
-		githubUrl: "https://github.com/gdsakelaris",
-		liveUrl: null,
-	},
-	{
-		id: 3,
 		title: "SumTube AI",
 		description:
 			"AI-driven web application that generates concise summaries of YouTube videos.",
 		gradient: "from-purple-400 to-pink-500",
 		image: "/images/sumtube-example.png",
 		tags: ["Python", "OpenAI", "Django"],
+		githubUrl: "https://github.com/gdsakelaris",
+		liveUrl: null,
+	},
+	{
+		id: 3,
+		title: "Software Sack",
+		description:
+			"Online software marketplace with React frontend and AWS backend.",
+		gradient: "from-green-400 to-blue-500",
+		icon: "💼",
+		tags: ["React", "AWS", "Stripe"],
 		githubUrl: "https://github.com/gdsakelaris",
 		liveUrl: null,
 	},
