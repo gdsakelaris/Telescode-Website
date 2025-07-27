@@ -112,12 +112,21 @@ export function Navbar() {
 								href={item.href}
 								className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
 								onClick={(e) => {
-									// If it's an anchor link, handle smooth scrolling
-									if (item.href.startsWith("#") || item.href.includes("/#")) {
+									// Only handle smooth scrolling for anchors on the current page
+									if (item.href.startsWith("#")) {
+										// Direct anchor link like #home (only when already on home page)
 										e.preventDefault();
-										const anchorId = item.href.includes("/#")
-											? item.href.split("/#")[1]
-											: item.href.substring(1);
+										const target = document.querySelector(item.href);
+										if (target) {
+											target.scrollIntoView({
+												behavior: "smooth",
+												block: "start",
+											});
+										}
+									} else if (item.href.includes("/#") && pathname === "/") {
+										// Cross-page anchor link but we're already on the home page
+										e.preventDefault();
+										const anchorId = item.href.split("/#")[1];
 										const target = document.querySelector(`#${anchorId}`);
 										if (target) {
 											target.scrollIntoView({
@@ -126,7 +135,7 @@ export function Navbar() {
 											});
 										}
 									}
-									// For page navigation (like /about), let Next.js Link handle it
+									// For all other cases (page navigation), let Next.js Link handle it
 									setIsOpen(false);
 								}}
 							>

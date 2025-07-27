@@ -20,7 +20,7 @@ const education = [
 			"Conducted surveys and data analysis for faculty evaluation processes",
 		],
 		relevantCourses: [
-			"Machine Learning & Data Science",
+			"Data Analysis",
 			"Distributed Systems",
 			"Object-Oriented Enterprise Application Development",
 			"Database Systems & Programming",
