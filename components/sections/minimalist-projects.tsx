@@ -27,7 +27,7 @@ const projects = [
 		icon: "💼",
 		tags: ["React", "AWS", "Stripe"],
 		githubUrl: "https://github.com/gdsakelaris",
-		liveUrl: "https://softwaresack.com",
+		liveUrl: null,
 	},
 	{
 		id: 3,
