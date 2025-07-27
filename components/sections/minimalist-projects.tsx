@@ -15,7 +15,7 @@ const projects = [
 		gradient: "from-primary-500 to-purple-600",
 		image: "/images/ufc-models.png", // Replace with your image path
 		tags: ["Python", "XGBoost", "ML"],
-		githubUrl: "https://github.com/gdsakelaris",
+		githubUrl: "https://github.com/gdsakelaris/xgb-ufc-model-3",
 		liveUrl: null,
 	},
 	{
@@ -26,7 +26,7 @@ const projects = [
 		gradient: "from-purple-400 to-pink-500",
 		image: "/images/sumtube-example.png",
 		tags: ["Python", "OpenAI", "Django"],
-		githubUrl: "https://github.com/gdsakelaris",
+		githubUrl: "https://github.com/gdsakelaris/SumTube-s",
 		liveUrl: null,
 	},
 	{
@@ -37,7 +37,7 @@ const projects = [
 		gradient: "from-green-400 to-blue-500",
 		icon: "💼",
 		tags: ["React", "AWS", "Stripe"],
-		githubUrl: "https://github.com/gdsakelaris",
+		githubUrl: "https://github.com/gdsakelaris/softwaresackfrontend",
 		liveUrl: null,
 	},
 ];
@@ -123,12 +123,15 @@ export function MinimalistProjects() {
 											</Button>
 										</Link>
 									) : (
-										<Button
-											disabled
-											className="flex-1 py-2 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 rounded-lg text-sm cursor-not-allowed"
+										<Link
+											href={project.githubUrl}
+											className="flex-1"
 										>
-											Coming Soon
-										</Button>
+											<Button className="w-full py-2 bg-gray-800 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors text-sm">
+												<Github className="w-4 h-4 mr-2" />
+												View Code
+											</Button>
+										</Link>
 									)}
 
 									<Link href={project.githubUrl}>
