@@ -6,54 +6,49 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const experiences = [
 	{
 		company: "Telescode LLC",
-		position: "Founder and Software Engineer",
+		position: "Full-Stack Software Engineer",
 		location: "Hybrid",
 		period: "July 2023 - Present",
 		type: "Full-time",
 		description:
-			"Founded the company to monetize personal software projects and create websites for local businesses.",
+			"Full-stack software development and project management for client solutions and internal products.",
 		achievements: [
-			'Developed and launched "Software Sack," a direct-to-consumer platform for purchasing and installing software applications',
-			'Created "Code2Text," a development tool for large-scale source code documentation',
-			"Conduct full-stack web development projects using JavaScript, React, and HTML/CSS with AWS deployment",
-			"Provide tailored solutions including website development and SEO optimization for clients",
-			"Oversee all business aspects including planning, operations, software engineering, and client outreach",
+			"Utilized React to develop and maintain websites for clients",
+			"Created and hosted software for clients, such as the UFC fight prediction machine learning model",
+			"Developed the SoftwareSack website, a site that allowed users to purchase Windows applications and install them directly to their PC, using AWS cloud services such as S3, Lambda, and CloudFront",
+			"Developed various Windows applications to assist in the development process, such as Code2Text",
 		],
 		technologies: ["React", "JavaScript", "AWS", "Python", "Node.js"],
 	},
 	{
 		company: "Resilience Inc.",
-		position: "Full Stack Software Engineering Intern",
+		position: "Backend Software Engineer",
 		location: "Remote",
 		period: "January 2023 - July 2023",
 		type: "Internship",
 		description:
-			'Led backend development for "Unite," a mobile application connecting refugees with vital resource providers.',
+			'Led backend design and development for the mobile application "Unite".',
 		achievements: [
-			"Engineered the backend architecture from scratch, including database design and development",
-			"Selected Oracle for database management and utilized Node.js with Express for server APIs",
-			"Implemented core features including user registration, login verification, and password encryption",
-			"Collaborated with UI/UX team to create intuitive front-end using React Native",
-			"Actively participated in Scrum meetings with cross-functional teams",
-			"Recognized by management for exceptional communication and technical proficiency",
+			"Led backend design and development for the mobile application 'Unite', ensuring robust performance and scalability in a production environment",
+			"Managed database operations using Oracle and crafted server APIs with Node.js and Express, demonstrating proficiency in SQL and REST API integration",
+			"Engineered core functionalities, including user registration, login verification, and secure password encryption, aligning development with business requirements",
+			"Engaged in collaborative Scrum meetings with cross-functional teams, contributing to agile problem-solving and effective decision making",
 		],
-		technologies: ["Node.js", "React Native", "Oracle", "Express", "JWT"],
+		technologies: ["Node.js", "Oracle", "Express", "SQL", "REST API"],
 	},
 	{
-		company: "Ray Meyer Fitness and Recreation Center",
-		position: "Lead Sports and Recreation Supervisor",
+		company: "DePaul University",
+		position: "Lead Sports Supervisor",
 		location: "Chicago, IL",
-		period: "August 2021 - June 2023",
+		period: "July 2021 - June 2023",
 		type: "Part-time",
 		description:
-			"Promoted to Lead Sports Supervisor, becoming the first in the facility's history.",
+			"Led sports facility operations and staff management for university athletic programs.",
 		achievements: [
-			"Supervised diverse sporting activities and events while maintaining facility standards",
-			"Authored comprehensive Sports Supervisor handbook and training manual",
-			"Trained 10+ new hires and conducted first-round interviews for job applicants",
-			"Assisted the Assistant Director of Club Sports with staff management",
-			"Served as liaison between patrons, club sports participants, and staff",
-			"Recognized for strong interpersonal skills and professionalism",
+			"Supervised basketball courts and track facilities, ensuring safe and efficient operations for university athletic programs and recreational activities",
+			"Provided comprehensive customer service to patrons, addressing inquiries, resolving issues, and maintaining positive user experiences across all facility interactions",
+			"Trained and mentored new sports supervisors, developing staff capabilities and ensuring consistent service delivery standards throughout the department",
+			"Authored comprehensive training manual for sports supervisor positions, demonstrating technical writing skills and creating standardized procedures for facility operations",
 		],
 		technologies: [],
 	},
@@ -95,7 +90,8 @@ export function Experience() {
 						My Professional Journey
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						From intern to entrepreneur - here's how my career has shaped who I am today.
+						From intern to entrepreneur - here's how my career has shaped who I
+						am today.
 					</p>
 				</motion.div>
 
