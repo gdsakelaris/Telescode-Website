@@ -20,8 +20,8 @@ export function MinimalistAbout() {
 						About Telescode
 					</h2>
 					<p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-						A professional platform showcasing innovative software development
-						projects built with the latest technologies
+						Innovative software development projects built with the latest
+						technologies
 					</p>
 				</motion.div>
 
@@ -35,9 +35,9 @@ export function MinimalistAbout() {
 						<h3 className="text-2xl font-bold mb-6">Our Approach</h3>
 						<p className="text-gray-600 dark:text-gray-300 mb-6">
 							At Telescode, we believe in pushing the boundaries of what's
-							possible with modern web technologies. Every project is an
-							opportunity to explore new frameworks, experiment with
-							cutting-edge tools, and deliver exceptional user experiences.
+							possible with modern technologies. Every project is an opportunity
+							to explore new frameworks, experiment with cutting-edge tools, and
+							deliver exceptional user experiences.
 						</p>
 						<div className="space-y-4">
 							<div className="flex items-center space-x-3">
@@ -50,7 +50,7 @@ export function MinimalistAbout() {
 							</div>
 							<div className="flex items-center space-x-3">
 								<div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
-								<span>Performance-First Architecture</span>
+								<span>Innovation and Performance</span>
 							</div>
 						</div>
 					</motion.div>
