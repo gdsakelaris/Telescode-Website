@@ -9,13 +9,13 @@ import { Button } from "@/components/ui/button";
 const projects = [
 	{
 		id: 1,
-		title: "UFC Fight Prediction",
+		title: "UFC Fight Prediction Model",
 		description:
 			"Machine learning model achieving 77% accuracy in predicting UFC fight outcomes.",
 		gradient: "from-primary-500 to-purple-600",
 		image: "/images/ufc-models.png", // Replace with your image path
 		tags: ["Python", "XGBoost", "ML"],
-		githubUrl: "https://github.com/gdsakelaris/xgb-ufc-model-3",
+		githubUrl: "https://github.com/gdsakelaris/UFC-Fight-Prediction-Model",
 		liveUrl: null,
 	},
 	{
@@ -37,7 +37,7 @@ const projects = [
 		gradient: "from-green-400 to-blue-500",
 		icon: "💼",
 		tags: ["React", "AWS", "Stripe"],
-		githubUrl: "https://github.com/gdsakelaris/softwaresackfrontend",
+		githubUrl: "https://github.com/gdsakelaris/Software-Sack-Front-End",
 		liveUrl: null,
 	},
 ];
