@@ -23,31 +23,32 @@ export function AboutHero() {
 						transition={{ duration: 0.5 }}
 					>
 						<h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
-							Hi, I'm{" "}
-							<span className="bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
-								Daniel Sakelaris
-							</span>
+							About Me
 						</h1>
 
 						<p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-							Founder & Software Engineer at Telescode LLC
+							Daniel Sakelaris - Software Engineer & Entrepreneur
 						</p>
 
 						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">
 							<p>
-								I'm a passionate software engineer with a deep love for machine
-								learning, web development, and solving complex problems through
-								code. As the founder of Telescode LLC, I specialize in creating
-								innovative software solutions that bridge the gap between
-								cutting-edge technology and real-world applications.
+								Hey there! I'm Daniel, a software engineer driven by curiosity and a passion for turning 
+								complex ideas into elegant solutions. My journey started with a Computer Science degree 
+								from DePaul University and has taken me through everything from machine learning models 
+								that predict UFC fights to building enterprise applications.
 							</p>
 
 							<p>
-								My journey in tech began with a fascination for data science and
-								evolved into building predictive models, especially in sports
-								analytics. When I'm not coding, you'll find me training in
-								Brazilian Jiu-Jitsu or analyzing UFC fight data for my machine
-								learning models.
+								What really drives me is the intersection of technology and real-world impact. Whether 
+								I'm developing a machine learning model with 77% accuracy or architecting cloud solutions, 
+								I'm always asking: "How can this make a meaningful difference?" Outside of coding, 
+								you'll find me on the mats training Brazilian Jiu-Jitsu or diving deep into sports analytics.
+							</p>
+							
+							<p>
+								I founded Telescode LLC to combine my technical expertise with my entrepreneurial spirit - 
+								creating solutions that don't just work, but truly solve problems. Every project is a 
+								chance to learn something new and push the boundaries of what's possible.
 							</p>
 						</div>
 

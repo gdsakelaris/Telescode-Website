@@ -5,9 +5,9 @@ import { Experience } from "@/components/sections/experience";
 import { Skills } from "@/components/sections/skills";
 
 export const metadata: Metadata = {
-	title: "About Daniel Sakelaris",
+	title: "About Me - Daniel Sakelaris",
 	description:
-		"Learn about Daniel Sakelaris, founder of Telescode LLC and software engineer specializing in machine learning and web development.",
+		"Get to know Daniel Sakelaris personally - my journey, passions, background, and what drives me as a software engineer and entrepreneur.",
 };
 
 export default function AboutPage() {

@@ -147,11 +147,11 @@ export function Skills() {
 					viewport={{ once: true }}
 				>
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-						Technical Skills
+						What I Work With
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						A comprehensive toolkit spanning machine learning, web development,
-						cloud technologies, and more.
+						The technologies and tools I've mastered throughout my journey as a
+						developer.
 					</p>
 				</motion.div>
 
@@ -221,11 +221,11 @@ export function Skills() {
 				>
 					<div className="text-center">
 						<h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-							Personality & Strengths
+							Who I Am Beyond Code
 						</h3>
 						<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-							Understanding the person behind the code through personality
-							assessments and core strengths.
+							My personality traits and strengths that shape how I approach
+							problems and work with others.
 						</p>
 					</div>
 

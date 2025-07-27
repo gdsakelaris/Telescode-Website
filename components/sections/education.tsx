@@ -58,11 +58,11 @@ export function Education() {
 					viewport={{ once: true }}
 				>
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-						Education
+						My Educational Background
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						Academic foundation in computer science and business, with honors
-						recognition and leadership experience.
+						How my academic journey shaped my technical foundation and
+						leadership skills.
 					</p>
 				</motion.div>
 

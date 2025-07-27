@@ -21,23 +21,29 @@ const socialLinks = [
 
 const footerLinks = {
 	Company: [
-		{ name: "About", href: "/about" },
-		{ name: "Projects", href: "/projects" },
-		{ name: "Blog", href: "/blog" },
-		{ name: "Contact", href: "/contact" },
+		{ name: "About", href: "/#about" },
+		{ name: "Projects", href: "/#projects" },
+		{ name: "Blog", href: "/#blog" },
+		{ name: "Contact", href: "/#contact" },
 	],
 	Services: [
-		{ name: "Web Development", href: "/services/web" },
-		{ name: "Mobile Apps", href: "/services/mobile" },
-		{ name: "Consulting", href: "/services/consulting" },
-		{ name: "Maintenance", href: "/services/maintenance" },
+		{ name: "Web Development", href: "/#contact" },
+		{ name: "Mobile Apps", href: "/#contact" },
+		{ name: "Consulting", href: "/#contact" },
+		{ name: "Maintenance", href: "/#contact" },
 	],
-	Resources: [
-		{ name: "Documentation", href: "/docs" },
-		{ name: "Blog", href: "/blog" },
-		{ name: "Case Studies", href: "/case-studies" },
-		{ name: "Open Source", href: "/open-source" },
-	],
+	// Services: [
+	// 	{ name: "Web Development", href: "/services/web" },
+	// 	{ name: "Mobile Apps", href: "/services/mobile" },
+	// 	{ name: "Consulting", href: "/services/consulting" },
+	// 	{ name: "Maintenance", href: "/services/maintenance" },
+	// ],
+	// Resources: [
+	// 	{ name: "Documentation", href: "/docs" },
+	// 	{ name: "Blog", href: "/blog" },
+	// 	{ name: "Case Studies", href: "/case-studies" },
+	// 	{ name: "Open Source", href: "/open-source" },
+	// ],
 };
 
 export function Footer() {

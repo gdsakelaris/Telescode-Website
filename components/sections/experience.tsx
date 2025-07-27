@@ -92,11 +92,10 @@ export function Experience() {
 					viewport={{ once: true }}
 				>
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-						Professional Experience
+						My Professional Journey
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						A journey through software engineering, entrepreneurship, and
-						leadership roles.
+						From intern to entrepreneur - here's how my career has shaped who I am today.
 					</p>
 				</motion.div>
 

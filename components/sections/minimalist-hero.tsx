@@ -45,7 +45,7 @@ export function MinimalistHero() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.4 }}
 					>
-						<Link href="/projects">
+						<Link href="#projects">
 							<Button
 								size="xl"
 								className="px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse"
@@ -53,7 +53,7 @@ export function MinimalistHero() {
 								View Projects
 							</Button>
 						</Link>
-						<Link href="/contact">
+						<Link href="#contact">
 							<Button
 								variant="outline"
 								size="xl"
