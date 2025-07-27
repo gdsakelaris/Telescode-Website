@@ -107,24 +107,31 @@ export function Navbar() {
 				>
 					<div className="space-y-1 px-4 pb-3 pt-2">
 						{navigation.map((item) => (
-							<a
+							<Link
 								key={item.name}
 								href={item.href}
 								className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
 								onClick={(e) => {
-									e.preventDefault();
-									const target = document.querySelector(item.href);
-									if (target) {
-										target.scrollIntoView({
-											behavior: "smooth",
-											block: "start",
-										});
+									// If it's an anchor link, handle smooth scrolling
+									if (item.href.startsWith("#") || item.href.includes("/#")) {
+										e.preventDefault();
+										const anchorId = item.href.includes("/#")
+											? item.href.split("/#")[1]
+											: item.href.substring(1);
+										const target = document.querySelector(`#${anchorId}`);
+										if (target) {
+											target.scrollIntoView({
+												behavior: "smooth",
+												block: "start",
+											});
+										}
 									}
+									// For page navigation (like /about), let Next.js Link handle it
 									setIsOpen(false);
 								}}
 							>
 								{item.name}
-							</a>
+							</Link>
 						))}
 					</div>
 				</motion.div>
