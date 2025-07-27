@@ -10,11 +10,10 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navigation = [
-	{ name: "Home", href: "/" },
-	{ name: "Projects", href: "/projects" },
-	{ name: "About", href: "/about" },
-	{ name: "Blog", href: "/blog" },
-	{ name: "Contact", href: "/contact" },
+	{ name: "Home", href: "#home" },
+	{ name: "About", href: "#about" },
+	{ name: "Projects", href: "#projects" },
+	{ name: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -107,18 +106,24 @@ export function Navbar() {
 				>
 					<div className="space-y-1 px-4 pb-3 pt-2">
 						{navigation.map((item) => (
-							<Link
+							<a
 								key={item.name}
 								href={item.href}
-								className={cn(
-									"block rounded-md px-3 py-2 text-base font-medium",
-									pathname === item.href
-										? "bg-primary-50 text-primary-600 dark:bg-primary-950"
-										: "text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-								)}
+								className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
+								onClick={(e) => {
+									e.preventDefault();
+									const target = document.querySelector(item.href);
+									if (target) {
+										target.scrollIntoView({
+											behavior: "smooth",
+											block: "start",
+										});
+									}
+									setIsOpen(false);
+								}}
 							>
 								{item.name}
-							</Link>
+							</a>
 						))}
 					</div>
 				</motion.div>

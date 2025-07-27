@@ -23,6 +23,10 @@
 	margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	max-width: 100vw;
@@ -54,20 +58,20 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(156, 163, 175, 0.5);
+	background: linear-gradient(135deg, #6366f1, #8b5cf6);
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(156, 163, 175, 0.7);
+	background: linear-gradient(135deg, #4f46e5, #7c3aed);
 }
 
 .dark ::-webkit-scrollbar-thumb {
-	background: rgba(75, 85, 99, 0.5);
+	background: linear-gradient(135deg, #6366f1, #8b5cf6);
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-	background: rgba(75, 85, 99, 0.7);
+	background: linear-gradient(135deg, #4f46e5, #7c3aed);
 }
 
 /* Syntax highlighting for code blocks */
@@ -99,4 +103,73 @@ a {
 ::selection {
 	background-color: #3b82f6;
 	color: white;
+}
+
+/* Glass morphism effects */
+.glass-effect {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+	background: rgba(15, 23, 42, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text utility */
+.gradient-text {
+	background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+/* Floating animations */
+@keyframes float {
+	0%, 100% { 
+		transform: translateY(0px) rotate(0deg); 
+	}
+	50% { 
+		transform: translateY(-20px) rotate(5deg); 
+	}
+}
+
+.animate-float {
+	animation: float 6s ease-in-out infinite;
+}
+
+/* Project card hover effects */
+.project-card {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+	transform: translateY(-8px) scale(1.02);
+}
+
+/* Intersection Observer animations */
+.animate-on-scroll {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Custom glow animation */
+@keyframes glow {
+	from { 
+		box-shadow: 0 0 20px #6366f1; 
+	}
+	to { 
+		box-shadow: 0 0 30px #8b5cf6, 0 0 40px #06b6d4; 
+	}
+}
+
+.animate-glow {
+	animation: glow 2s ease-in-out infinite alternate;
 }
