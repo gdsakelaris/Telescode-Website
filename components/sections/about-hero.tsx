@@ -32,12 +32,12 @@ export function AboutHero() {
 
 						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">
 							<p>
-								Hey there! I'm Daniel, a software engineer driven by curiosity
-								and a passion for turning complex ideas into elegant solutions.
-								My journey started with a Computer Science degree from DePaul
-								University and has taken me through everything from machine
-								learning models that predict UFC fights to building enterprise
-								applications.
+								Hey there! I'm George (Daniel), a software engineer driven by
+								curiosity and a passion for turning complex ideas into elegant
+								solutions. My journey started with a Computer Science degree
+								from DePaul University and has taken me through everything from
+								machine learning models that predict UFC fights to building
+								enterprise applications.
 							</p>
 
 							<p>
