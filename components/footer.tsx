@@ -52,8 +52,7 @@ export function Footer() {
 							<span className="text-xl font-bold">Telescode</span>
 						</div>
 						<p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-							Founded by Daniel Sakelaris, specializing in machine learning, web
-							development, and custom software solutions.
+							Custom Software Solutions.
 						</p>
 						<div className="mt-6 flex space-x-4">
 							{socialLinks.map((item) => (

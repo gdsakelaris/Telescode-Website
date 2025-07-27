@@ -51,7 +51,7 @@ export function MinimalistContact() {
 								<div className="text-center">
 									<h4 className="font-semibold text-lg">Email</h4>
 									<p className="text-gray-600 dark:text-gray-300">
-										gdsakelaris@gmail.com
+										gdsakelaris6@gmail.com
 									</p>
 								</div>
 							</div>
