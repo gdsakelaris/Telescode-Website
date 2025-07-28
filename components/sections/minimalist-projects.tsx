@@ -13,7 +13,7 @@ const projects = [
 		description:
 			"Machine learning model achieving 77% accuracy in predicting UFC fight winners.",
 		gradient: "from-primary-500 to-purple-600",
-		image: "/images/ufc-models.png", // Replace with your image path
+		image: "/images/ufc-models.png",
 		tags: ["Python", "XGBoost", "ML"],
 		githubUrl: "https://github.com/gdsakelaris/UFC-Fight-Prediction-Model",
 		liveUrl: null,
@@ -99,15 +99,13 @@ export function MinimalistProjects() {
 								<div
 									className={`aspect-video bg-gradient-to-br ${project.gradient} rounded-lg mb-6 flex items-center justify-center relative overflow-hidden`}
 								>
-									{project.image ? (
+									{project.image && (
 										<Image
 											src={project.image}
 											alt={project.title}
 											fill
 											className="object-cover"
 										/>
-									) : (
-										<div className="text-6xl">{project.icon}</div>
 									)}
 									<div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]"></div>
 								</div>
