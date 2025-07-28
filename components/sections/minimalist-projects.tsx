@@ -11,7 +11,7 @@ const projects = [
 		id: 1,
 		title: "UFC Fight Prediction Model",
 		description:
-			"Machine learning model achieving 77% accuracy in predicting UFC fight outcomes.",
+			"Machine learning model achieving 77% accuracy in predicting UFC fight winners.",
 		gradient: "from-primary-500 to-purple-600",
 		image: "/images/ufc-models.png", // Replace with your image path
 		tags: ["Python", "XGBoost", "ML"],
@@ -31,6 +31,17 @@ const projects = [
 	},
 	{
 		id: 3,
+		title: "Zeitgeist",
+		description: "Social media application in progress.",
+		gradient: "from-cyan-400 to-teal-500",
+		image: "/images/zeitgeist-1.jpg",
+		// image: "/images/zeitgeist-2.png",
+		tags: ["TypeScript", "React Native", "Firebase"],
+		githubUrl: "https://github.com/gdsakelaris/Zeitgeist",
+		liveUrl: null,
+	},
+	{
+		id: 4,
 		title: "Software Sack",
 		description:
 			"Online software marketplace with React frontend and AWS backend.",
