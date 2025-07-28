@@ -10,8 +10,7 @@ const projects = [
 	{
 		id: 1,
 		title: "UFC Fight Prediction Model",
-		description:
-			"Machine learning model achieving 77% accuracy in predicting UFC fight winners.",
+		description: "Machine learning model that predicts UFC fight outcomes.",
 		gradient: "from-primary-500 to-purple-600",
 		image: "/images/ufc-models.png",
 		tags: ["Python", "XGBoost", "ML"],
@@ -21,8 +20,7 @@ const projects = [
 	{
 		id: 2,
 		title: "SumTube AI",
-		description:
-			"AI-driven web application that generates concise summaries of YouTube videos.",
+		description: "AI-powered YouTube video summarizer.",
 		gradient: "from-purple-400 to-pink-500",
 		image: "/images/sumtube-example.png",
 		tags: ["Python", "OpenAI", "Django"],
@@ -32,7 +30,7 @@ const projects = [
 	{
 		id: 3,
 		title: "Zeitgeist",
-		description: "Social media application in progress.",
+		description: "Social media application.",
 		gradient: "from-cyan-400 to-teal-500",
 		image: "/images/zeitgeist-1.jpg",
 		tags: ["TypeScript", "React Native", "Firebase"],
@@ -41,6 +39,16 @@ const projects = [
 	},
 	{
 		id: 4,
+		title: "Software Sack",
+		description: "Online software marketplace with AWS backend.",
+		gradient: "from-green-400 to-blue-500",
+		image: "/images/software-sack-logo.png",
+		tags: ["React", "AWS", "Stripe"],
+		githubUrl: "https://github.com/gdsakelaris/Software-Sack-Front-End",
+		liveUrl: null,
+	},
+	{
+		id: 5,
 		title: "Rustext",
 		description: "Keyboard-oriented command-line text editor built with Rust.",
 		gradient: "from-cyan-400 to-teal-500",
@@ -50,14 +58,13 @@ const projects = [
 		liveUrl: null,
 	},
 	{
-		id: 5,
-		title: "Software Sack",
-		description:
-			"Online software marketplace with React frontend and AWS backend.",
-		gradient: "from-green-400 to-blue-500",
-		image: "/images/software-sack-logo.png",
-		tags: ["React", "AWS", "Stripe"],
-		githubUrl: "https://github.com/gdsakelaris/Software-Sack-Front-End",
+		id: 6,
+		title: "AI Finance Application",
+		description: "AI-Powered Personal Finance Dashboard.",
+		gradient: "from-cyan-400 to-teal-500",
+		image: "/images/finance-app.png",
+		tags: ["Python", "Django", "ML"],
+		githubUrl: "https://github.com/gdsakelaris/AI-Personal-Finance-Dashboard",
 		liveUrl: null,
 	},
 ];
