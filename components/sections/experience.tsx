@@ -13,10 +13,10 @@ const experiences = [
 		description:
 			"Full-stack software development and project management for client solutions and internal products.",
 		achievements: [
-			"Developed and maintained responsive web applications for diverse clients using React, Next.js, and Node.js, delivering tailored solutions that met specific business requirements",
-			"Created and hosted software for clients, such as the UFC fight prediction machine learning model",
-			"Developed the SoftwareSack website, a site that allowed users to purchase Windows applications and install them directly to their PC, using AWS cloud services such as S3, Lambda, and CloudFront",
-			"Developed various Windows applications to assist in the development process, such as Code2Text",
+			"Founded and launched Telescode LLC from concept to operational business, managing all aspects including strategic planning, client acquisition, financial oversight, and business development",
+			"Architected and launched Software Sack, a direct-to-consumer platform enabling automated software purchases and installations using AWS services (S3, Lambda, CloudFront) with integrated Stripe payment processing",
+			"Developed full-stack web applications for diverse clients using React, Next.js, and Node.js, delivering tailored solutions with responsive design and SEO optimization that enhanced client online presence",
+			"Created proprietary development tools including Code2Text for source code documentation, streamlining internal workflows and improving development efficiency across large-scale projects",
 		],
 		technologies: ["React", "JavaScript", "AWS", "Python", "Node.js"],
 	},
@@ -29,10 +29,10 @@ const experiences = [
 		description:
 			'Led backend design and development for the mobile application "Unite".',
 		achievements: [
-			"Led backend design and development for the mobile application 'Unite', ensuring robust performance and scalability in a production environment",
-			"Managed database operations using Oracle and crafted server APIs with Node.js and Express, demonstrating proficiency in SQL and REST API integration",
-			"Engineered core functionalities, including user registration, login verification, and secure password encryption, aligning development with business requirements",
-			"Engaged in collaborative Scrum meetings with cross-functional teams, contributing to agile problem-solving and effective decision making",
+			"Led complete backend architecture design and development for 'Unite' mobile application from scratch, creating scalable infrastructure to connect refugees with vital resource providers",
+			"Engineered robust database architecture using Oracle and developed comprehensive server APIs with Node.js and Express, ensuring optimal performance and data integrity",
+			"Implemented secure authentication system including user registration, login verification, password encryption, and session persistence using JSON Web Tokens for enhanced security",
+			"Collaborated effectively in Scrum methodology with cross-functional UI/UX and development teams, contributing to agile problem-solving and receiving management recognition for exceptional technical proficiency",
 		],
 		technologies: ["Node.js", "Oracle", "Express", "SQL", "REST API"],
 	},
@@ -45,10 +45,10 @@ const experiences = [
 		description:
 			"Led sports facility operations and staff management for university athletic programs.",
 		achievements: [
-			"Supervised basketball courts and track facilities, ensuring safe and efficient operations for university athletic programs and recreational activities",
-			"Provided comprehensive customer service to patrons, addressing inquiries, resolving issues, and maintaining positive user experiences across all facility interactions",
-			"Trained and mentored new sports supervisors, developing staff capabilities and ensuring consistent service delivery standards throughout the department",
-			"Authored comprehensive training manual for sports supervisor positions, demonstrating technical writing skills and creating standardized procedures for facility operations",
+			"Promoted to Lead Sports Supervisor in August 2022, becoming the first person in facility history to achieve this position, demonstrating exceptional leadership and operational excellence",
+			"Supervised diverse sporting activities and facility operations, maintaining high safety standards while ensuring optimal patron experience across basketball courts, track facilities, and recreational areas",
+			"Authored comprehensive Sports Supervisor handbook and training manual, then planned and led formal training sessions for 10+ new hires while conducting first-round interviews for job applicants",
+			"Served as primary liaison between patrons, club sports participants, building managers, and staff, earning recognition for strong interpersonal skills and ability to handle stressful situations with professionalism",
 		],
 		technologies: [],
 	},
