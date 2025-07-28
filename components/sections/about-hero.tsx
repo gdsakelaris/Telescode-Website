@@ -46,7 +46,7 @@ export function AboutHero() {
 								model with 77% accuracy on fight outcomes or architecting cloud
 								solutions, I'm always asking: "How can this make a meaningful
 								difference?" Outside of coding, you'll find me on the mats
-								training Brazilian Jiu-Jitsu or in my car blasting Gucci Mane.
+								training Brazilian Jiu-Jitsu or listening to music.
 							</p>
 
 							<p>
