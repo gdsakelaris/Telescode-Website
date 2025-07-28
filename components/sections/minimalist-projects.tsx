@@ -42,6 +42,16 @@ const projects = [
 	},
 	{
 		id: 4,
+		title: "Rustext",
+		description: "Keyboard-oriented command-line text editor built with Rust.",
+		gradient: "from-cyan-400 to-teal-500",
+		image: "/images/rustext.png",
+		tags: ["Rust"],
+		githubUrl: "https://github.com/gdsakelaris/Rustext",
+		liveUrl: null,
+	},
+	{
+		id: 5,
 		title: "Software Sack",
 		description:
 			"Online software marketplace with React frontend and AWS backend.",
