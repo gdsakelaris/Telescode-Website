@@ -55,7 +55,6 @@ const projects = [
 		description:
 			"Online software marketplace with React frontend and AWS backend.",
 		gradient: "from-green-400 to-blue-500",
-		// icon: "💼",
 		image: "/images/software-sack-logo.png",
 		tags: ["React", "AWS", "Stripe"],
 		githubUrl: "https://github.com/gdsakelaris/Software-Sack-Front-End",
