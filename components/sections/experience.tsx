@@ -13,7 +13,7 @@ const experiences = [
 		description:
 			"Full-stack software development and project management for client solutions and internal products.",
 		achievements: [
-			"•	Developed and maintained responsive web applications for diverse clients using React, Next.js, and Node.js, delivering tailored solutions that met specific business requirements",
+			"Developed and maintained responsive web applications for diverse clients using React, Next.js, and Node.js, delivering tailored solutions that met specific business requirements",
 			"Created and hosted software for clients, such as the UFC fight prediction machine learning model",
 			"Developed the SoftwareSack website, a site that allowed users to purchase Windows applications and install them directly to their PC, using AWS cloud services such as S3, Lambda, and CloudFront",
 			"Developed various Windows applications to assist in the development process, such as Code2Text",
