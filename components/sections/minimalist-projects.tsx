@@ -35,7 +35,6 @@ const projects = [
 		description: "Social media application in progress.",
 		gradient: "from-cyan-400 to-teal-500",
 		image: "/images/zeitgeist-1.jpg",
-		// image: "/images/zeitgeist-2.png",
 		tags: ["TypeScript", "React Native", "Firebase"],
 		githubUrl: "https://github.com/gdsakelaris/Zeitgeist",
 		liveUrl: null,
