@@ -32,7 +32,7 @@ const projects = [
 		title: "Digital Marketplace 2.0",
 		description: "Online software/file marketplace with AWS backend.",
 		gradient: "from-green-400 to-blue-500",
-		image: "/images/Software-Marketplace-Logo.png",
+		image: "/images/SS Logo.png",
 		tags: ["React", "AWS", "Stripe"],
 		githubUrl: "https://github.com/gdsakelaris/software-marketplace-v2",
 		liveUrl: "https://main.d1zt2kmu7kdbjp.amplifyapp.com/",
