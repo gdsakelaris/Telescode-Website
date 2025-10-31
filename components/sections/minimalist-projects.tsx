@@ -29,7 +29,7 @@ const projects = [
 	},
 	{
 		id: 3,
-		title: "Software Marketplace 2.0",
+		title: "Digital Marketplace 2.0",
 		description: "Online software/file marketplace with AWS backend.",
 		gradient: "from-green-400 to-blue-500",
 		image: "/images/Software-Marketplace-Logo.png",
