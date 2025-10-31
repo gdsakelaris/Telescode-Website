@@ -27,32 +27,31 @@ export function AboutHero() {
 						</h1>
 
 						<p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-							George Sakelaris - Software Engineer & Entrepreneur
+							George Sakelaris - Software Engineer
 						</p>
 
 						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">
 							<p>
 								Hey there! I'm George (Daniel), a software engineer driven by
-								curiosity and a passion for turning complex ideas into elegant
+								curiosity and a passion for turning complex ideas into real-world
 								solutions. My journey started with a Computer Science degree
 								from DePaul University and has taken me through everything from
-								machine learning models that predict UFC fights to building
+								machine learning models that predict fights to building
 								enterprise applications.
 							</p>
 
 							<p>
-								What really drives me is the intersection of technology and
+								What drives me is the intersection of technology and
 								real-world impact. Whether I'm developing a machine learning
 								model with 70% accuracy on fight outcomes or architecting cloud
 								solutions, I'm always asking: "How can this make a meaningful
-								difference?" Outside of coding, you'll find me on the mats
-								training Brazilian Jiu-Jitsu or listening to music.
+								difference?"
 							</p>
 
 							<p>
 								I founded Telescode LLC to combine my technical expertise with
 								my entrepreneurial spirit - creating solutions that don't just
-								work, but truly solve problems. Every project is a chance to
+								work, but truly solve problems. I believe that every project is a chance to
 								learn something new and push the boundaries of what's possible.
 							</p>
 						</div>
@@ -97,27 +96,6 @@ export function AboutHero() {
 								/>
 							</div>
 						</div>
-
-						{/* Floating badges */}
-						<motion.div
-							className="absolute -right-4 top-8 rounded-lg bg-white px-3 py-2 shadow-lg dark:bg-gray-800"
-							animate={{ y: [0, -10, 0] }}
-							transition={{ duration: 2, repeat: Infinity }}
-						>
-							<p className="text-sm font-medium text-gray-900 dark:text-white">
-								🥋 BJJ Practitioner
-							</p>
-						</motion.div>
-
-						<motion.div
-							className="absolute -left-4 bottom-8 rounded-lg bg-white px-3 py-2 shadow-lg dark:bg-gray-800"
-							animate={{ y: [0, 10, 0] }}
-							transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-						>
-							<p className="text-sm font-medium text-gray-900 dark:text-white">
-								🤖 ML Engineer
-							</p>
-						</motion.div>
 					</motion.div>
 				</div>
 			</div>

@@ -8,6 +8,8 @@ import {
 	Brain,
 	Smartphone,
 	Settings,
+	BarChart3,
+	CheckCircle,
 } from "lucide-react";
 
 const skillCategories = [
@@ -18,33 +20,15 @@ const skillCategories = [
 			"Python",
 			"JavaScript",
 			"TypeScript",
-			"Java",
 			"C#",
 			"SQL",
+			"HTML/CSS",
+			"Java",
+			"Go",
 			"Swift",
 			"Rust",
-			"C++",
-			"C",
-			"R",
 			"Scala",
 			"PHP",
-			"Bash",
-		],
-	},
-	{
-		icon: Brain,
-		title: "Machine Learning & AI",
-		skills: [
-			"XGBoost",
-			"scikit-learn",
-			"PyTorch",
-			"TensorFlow",
-			"Neural Networks",
-			"Data Mining",
-			"Feature Engineering",
-			"Statistical Analysis",
-			"NLP",
-			"OpenAI GPT",
 		],
 	},
 	{
@@ -56,60 +40,101 @@ const skillCategories = [
 			"Node.js",
 			"Express.js",
 			"Django",
-			"Flask",
+			"ASP.NET Core",
 			"React Native",
-			"SwiftUI",
-			"UIKit",
-			"Flutter",
-			"Redux",
-		],
-	},
-	{
-		icon: Database,
-		title: "Databases & Data",
-		skills: [
-			"PostgreSQL",
-			"MySQL",
-			"Oracle",
-			"MongoDB",
-			"SQLite",
-			"Firestore",
-			"pandas",
-			"NumPy",
-			"Matplotlib",
-			"Power BI",
-			"Excel",
+			"REST APIs",
+			"GraphQL",
+			"WebSockets",
+			"Tailwind CSS",
+			"Vue.js",
+			"Responsive Design",
 		],
 	},
 	{
 		icon: Cloud,
 		title: "Cloud & DevOps",
 		skills: [
-			"AWS (Lambda, S3, API Gateway)",
+			"AWS (Lambda, S3, EC2, RDS, CloudFormation)",
+			"Azure",
+			"GCP",
 			"Docker",
 			"Kubernetes",
-			"GitHub Actions",
+			"Terraform",
 			"Git",
-			"CI/CD",
-			"Linux",
-			"NGINX",
-			"Apache",
+			"GitHub Actions",
+			"CI/CD Pipelines",
+			"Nginx",
+			"Microservices Architecture",
+		],
+	},
+	{
+		icon: BarChart3,
+		title: "Data Analysis & Visualization",
+		skills: [
+			"Pandas",
+			"NumPy",
+			"Matplotlib",
+			"Seaborn",
+			"Jupyter Notebooks",
+			"Power BI",
+			"Tableau",
+			"Excel",
+		],
+	},
+	{
+		icon: Database,
+		title: "Database Systems",
+		skills: [
+			"PostgreSQL",
+			"MySQL",
+			"MongoDB",
+			"Redis",
+			"SQLite",
+			"Oracle",
+			"Elasticsearch",
+			"Vector Databases",
+		],
+	},
+	{
+		icon: Brain,
+		title: "Machine Learning & AI",
+		skills: [
+			"XGBoost",
+			"LightGBM",
+			"CatBoost",
+			"scikit-learn",
+			"TensorFlow",
+			"PyTorch",
+			"OpenAI API",
+			"LangChain",
+			"RAG",
+			"Prompt Engineering",
+			"NLP",
+			"Computer Vision",
+			"Model Fine-tuning",
+		],
+	},
+	{
+		icon: CheckCircle,
+		title: "Testing & Quality",
+		skills: [
+			"Jest",
+			"Pytest",
+			"Unit Testing",
+			"Integration Testing",
+			"Test-Driven Development (TDD)",
 		],
 	},
 	{
 		icon: Settings,
-		title: "Tools & Frameworks",
+		title: "Additional Tools",
 		skills: [
-			".NET",
-			"Spring Boot",
-			"Hibernate",
-			"Entity Framework",
-			"Jest",
-			"Selenium",
+			"Linux/Unix",
 			"Postman",
-			"Jira",
-			"Slack",
-			"Microsoft Teams",
+			"Swagger",
+			"Web Scraping (BeautifulSoup, Selenium)",
+			"Agile/Scrum",
+			"JIRA",
 		],
 	},
 ];
@@ -149,14 +174,10 @@ export function Skills() {
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 						What I Work With
 					</h2>
-					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						The technologies and tools I've mastered throughout my journey as a
-						developer.
-					</p>
 				</motion.div>
 
 				<motion.div
-					className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+					className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4"
 					variants={containerVariants}
 					initial="hidden"
 					whileInView="visible"

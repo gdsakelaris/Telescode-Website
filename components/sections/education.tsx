@@ -10,38 +10,24 @@ const education = [
 		major: "Computer Science",
 		concentration: "Software Development",
 		location: "Chicago, IL",
-		period: "2019 - 2023",
+		period: "2020 - 2023",
 		gpa: "3.715",
 		honors: "Magna Cum Laude",
 		achievements: [
 			"Dean's List: 2020-2021 Winter, 2021-2022 Autumn, 2022-2023 Autumn, Winter, Spring, 2023-2024 Autumn",
 			"Student Representative on CDM Personnel Committee for faculty tenure/promotion evaluations",
 			"Co-founded DePaul Martial Arts Club, serving as Vice President and Treasurer",
-			"Conducted surveys and data analysis for faculty evaluation processes",
 		],
 		relevantCourses: [
-			"Data Analysis",
-			"Distributed Systems",
 			"Object-Oriented Enterprise Application Development",
 			"Database Systems & Programming",
+			"Data Analysis",
 			"Software Testing & Agile Development",
-			"Mobile App Development for iOS",
+			"Distributed Systems",
 			"Safe Systems Programming (Rust)",
+			"Mobile App Development for iOS",
+			"Web Development",
 			"Interactive Web Scripting",
-		],
-	},
-	{
-		institution: "Purdue University Northwest",
-		degree: "Master of Business Administration",
-		major: "Finance",
-		location: "Hammond, IN",
-		period: "Accepted, Enrollment Deferred",
-		status: "Deferred to focus on Telescode LLC",
-		potentialStart: "Fall 2025",
-		achievements: [
-			"Accepted into MBA program with Finance concentration",
-			"Strategically deferred to pursue entrepreneurial opportunities",
-			"Considering other graduate programs in Chicago area",
 		],
 	},
 ];
@@ -60,10 +46,6 @@ export function Education() {
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 						My Educational Background
 					</h2>
-					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						How my academic journey shaped my technical foundation and
-						leadership skills.
-					</p>
 				</motion.div>
 
 				<div className="mt-16 space-y-12">
@@ -168,22 +150,6 @@ export function Education() {
 													{edu.honors && (
 														<div className="mt-1 text-xs text-primary-700 dark:text-primary-300">
 															{edu.honors}
-														</div>
-													)}
-												</div>
-											)}
-
-											{edu.status && (
-												<div className="rounded-lg bg-blue-50 p-4 text-center dark:bg-blue-900/20">
-													<div className="text-sm font-medium text-blue-600 dark:text-blue-400">
-														Status
-													</div>
-													<div className="mt-1 text-sm text-blue-700 dark:text-blue-300">
-														{edu.status}
-													</div>
-													{edu.potentialStart && (
-														<div className="mt-1 text-xs text-blue-600 dark:text-blue-400">
-															Potential start: {edu.potentialStart}
 														</div>
 													)}
 												</div>

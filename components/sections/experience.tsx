@@ -5,52 +5,43 @@ import { Building, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
 	{
-		company: "Telescode LLC",
+		company: "Telescode",
 		position: "Full-Stack Software Engineer",
-		location: "Hybrid",
 		period: "July 2023 - Present",
 		type: "Full-time",
-		description:
-			"Full-stack software development and project management for client solutions and internal products.",
 		achievements: [
-			"Founded and launched Telescode LLC from concept to operational business, managing all aspects including strategic planning, client acquisition, financial oversight, and business development",
-			"Architected and launched Software Sack, a direct-to-consumer platform enabling automated software purchases and installations using AWS services (S3, Lambda, CloudFront) with integrated Stripe payment processing",
-			"Developed full-stack web applications for diverse clients using React, Next.js, and Node.js, delivering tailored solutions with responsive design and SEO optimization that enhanced client online presence",
-			"Created proprietary development tools including Code2Text for source code documentation, streamlining internal workflows and improving development efficiency across large-scale projects",
+			"Developed e-commerce platform for digital product sales using React and AWS serverless architecture",
+			"Implemented payment processing with Stripe API and automated file delivery via S3 signed URLs",
+			"Deployed serverless backend using AWS Lambda, API Gateway, and DynamoDB with Infrastructure as Code",
+			"Developed and commercialized portfolio of Windows applications and data products, ranging from automated data collection tools to machine learning prediction systems",
 		],
-		technologies: ["React", "JavaScript", "AWS", "Python", "Node.js"],
+		technologies: ["React", "AWS", "Lambda", "API Gateway", "DynamoDB", "S3", "Stripe"],
 	},
 	{
-		company: "Resilience Inc.",
+		company: "Resilience, Inc.",
 		position: "Backend Software Engineer",
-		location: "Remote",
 		period: "January 2023 - July 2023",
-		type: "Internship",
-		description:
-			'Led backend design and development for the mobile application "Unite".',
+		type: "Full-time",
 		achievements: [
-			"Led complete backend architecture design and development for 'Unite' mobile application from scratch, creating scalable infrastructure to connect refugees with vital resource providers",
-			"Engineered robust database architecture using Oracle and developed comprehensive server APIs with Node.js and Express, ensuring optimal performance and data integrity",
-			"Implemented secure authentication system including user registration, login verification, password encryption, and session persistence using JSON Web Tokens for enhanced security",
-			"Collaborated effectively in Scrum methodology with cross-functional UI/UX and development teams, contributing to agile problem-solving and receiving management recognition for exceptional technical proficiency",
+			"Led end-to-end development of a mobile application from inception to production",
+			"Architected Oracle database and Node.js/Express backend while prototyping React Native frontend components",
+			"Engineered complete backend infrastructure from scratch, including database design, RESTful APIs, and secure authentication",
+			"Implemented core security features including password encryption, JWT-based session persistence, and user registration/verification systems",
 		],
-		technologies: ["Node.js", "Oracle", "Express", "SQL", "REST API"],
+		technologies: ["Node.js", "Express", "Oracle", "React Native", "JWT", "REST API"],
 	},
 	{
-		company: "DePaul University",
-		position: "Lead Sports Supervisor",
-		location: "Chicago, IL",
-		period: "July 2021 - June 2023",
+		company: "Ray Meyer Fitness and Recreation Center",
+		position: "Lead Sports and Recreation Supervisor",
+		period: "August 2021 - June 2023",
 		type: "Part-time",
-		description:
-			"Led sports facility operations and staff management for university athletic programs.",
 		achievements: [
-			"Promoted to Lead Sports Supervisor in August 2022, becoming the first person in facility history to achieve this position, demonstrating exceptional leadership and operational excellence",
-			"Supervised diverse sporting activities and facility operations, maintaining high safety standards while ensuring optimal patron experience across basketball courts, track facilities, and recreational areas",
-			"Authored comprehensive Sports Supervisor handbook and training manual, then planned and led formal training sessions for 10+ new hires while conducting first-round interviews for job applicants",
+			"Promoted to Lead Sports Supervisor in August 2022, becoming the first person in facility history to achieve this position, demonstrating exceptional leadership",
+			"Authored comprehensive Sports Supervisor handbook and training manual, then planned and led formal training sessions for 15+ new hires",
+			"Supervised diverse sporting activities across basketball courts, tracks, and recreational areas while maintaining high safety standards and patron experience",
 			"Served as primary liaison between patrons, club sports participants, building managers, and staff, earning recognition for strong interpersonal skills and ability to handle stressful situations with professionalism",
 		],
-		technologies: [],
+		technologies: ["Leadership", "Communication", "Training", "Conflict Resolution", "Organization"],
 	},
 ];
 
@@ -89,10 +80,6 @@ export function Experience() {
 					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
 						My Professional Journey
 					</h2>
-					<p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-						From intern to entrepreneur - here's how my career has shaped who I
-						am today.
-					</p>
 				</motion.div>
 
 				<motion.div
@@ -139,17 +126,9 @@ export function Experience() {
 													<Calendar className="mr-1 h-4 w-4" />
 													{exp.period}
 												</div>
-												<div className="flex items-center">
-													<MapPin className="mr-1 h-4 w-4" />
-													{exp.location}
-												</div>
+
 											</div>
 										</div>
-
-										<p className="mt-4 text-gray-600 dark:text-gray-300">
-											{exp.description}
-										</p>
-
 										<ul className="mt-4 space-y-2">
 											{exp.achievements.map((achievement, achievementIndex) => (
 												<li
