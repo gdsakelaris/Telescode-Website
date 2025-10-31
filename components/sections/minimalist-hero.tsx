@@ -8,7 +8,7 @@ export function MinimalistHero() {
 	return (
 		<section
 			id="home"
-			className="min-h-[85vh] flex items-center justify-center pt-20 pb-10 relative overflow-hidden"
+			className="min-h-[70vh] flex items-center justify-center pt-16 pb-8 relative overflow-hidden"
 		>
 			{/* Background Effects */}
 			<div className="fixed inset-0 -z-10">
