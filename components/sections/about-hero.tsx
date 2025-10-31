@@ -43,7 +43,7 @@ export function AboutHero() {
 							<p>
 								What really drives me is the intersection of technology and
 								real-world impact. Whether I'm developing a machine learning
-								model with 77% accuracy on fight outcomes or architecting cloud
+								model with 70% accuracy on fight outcomes or architecting cloud
 								solutions, I'm always asking: "How can this make a meaningful
 								difference?" Outside of coding, you'll find me on the mats
 								training Brazilian Jiu-Jitsu or listening to music.
