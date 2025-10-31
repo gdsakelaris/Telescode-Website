@@ -29,10 +29,10 @@ const projects = [
 	},
 	{
 		id: 3,
-		title: "Software/File Marketplace",
-		description: "Online software marketplace with AWS backend.",
+		title: "Software Marketplace 2.0",
+		description: "Online software/file marketplace with AWS backend.",
 		gradient: "from-green-400 to-blue-500",
-		image: "/images/software-sack-logo.png",
+		image: "/images/Software-Marketplace-Logo.png",
 		tags: ["React", "AWS", "Stripe"],
 		githubUrl: "https://github.com/gdsakelaris/software-marketplace-v2",
 		liveUrl: "https://main.d1zt2kmu7kdbjp.amplifyapp.com/",
