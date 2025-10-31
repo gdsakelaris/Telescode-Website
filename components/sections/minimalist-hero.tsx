@@ -8,7 +8,7 @@ export function MinimalistHero() {
 	return (
 		<section
 			id="home"
-			className="min-h-[70vh] flex items-center justify-center pt-16 pb-8 relative overflow-hidden"
+			className="min-h-[60vh] md:min-h-[65vh] flex items-center justify-center pt-12 pb-6 relative overflow-hidden"
 		>
 			{/* Background Effects */}
 			<div className="fixed inset-0 -z-10">
@@ -23,14 +23,14 @@ export function MinimalistHero() {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, ease: "easeOut" }}
 				>
-					<h1 className="text-6xl md:text-8xl font-bold mb-6">
+					<h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6">
 						<span className="bg-gradient-to-r from-primary-600 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
 							Telescode
 						</span>
 					</h1>
 
 					<motion.p
-						className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
+						className="text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.8, delay: 0.2 }}

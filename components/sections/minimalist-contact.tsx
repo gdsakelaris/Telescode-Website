@@ -8,7 +8,7 @@ export function MinimalistContact() {
 	return (
 		<section
 			id="contact"
-			className="py-20 bg-gray-50 dark:bg-gray-900/50"
+			className="py-16 md:py-20 bg-gray-50 dark:bg-gray-900/50"
 		>
 			<div className="container mx-auto px-6">
 				<motion.div
