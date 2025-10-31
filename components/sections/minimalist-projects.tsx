@@ -12,33 +12,23 @@ const projects = [
 		title: "UFC Fight Prediction Model",
 		description: "Machine learning model that predicts UFC fight outcomes.",
 		gradient: "from-primary-500 to-purple-600",
-		image: "/images/ufc-models.png",
+		image: "/images/Win Your Belt.png",
 		tags: ["Python", "XGBoost", "ML"],
-		githubUrl: "https://github.com/gdsakelaris/UFC-Fight-Prediction-Model",
-		liveUrl: null,
+		githubUrl: "https://github.com/gdsakelaris/UFC-Machine-Learning-Model",
+		liveUrl: "https://discord.gg/X3tc8vYx27",
 	},
 	{
 		id: 2,
-		title: "Zeitgeist",
-		description: "Social media application.",
-		gradient: "from-cyan-400 to-teal-500",
-		image: "/images/zeitgeist-1.jpg",
-		tags: ["TypeScript", "React Native", "Firebase"],
-		githubUrl: "https://github.com/gdsakelaris/Zeitgeist",
-		liveUrl: null,
+		title: "MMA Warriors",
+		description: "Pokemon-like MMA card game.",
+		gradient: "from-primary-500 to-purple-600",
+		image: "/images/MMA-Warriors.png",
+		tags: ["HTML", "CSS", "JavaScript"],
+		githubUrl: "https://github.com/gdsakelaris/MMA-Card-Game",
+		liveUrl: "https://mma-warriors.com/",
 	},
 	{
 		id: 3,
-		title: "SumTube AI",
-		description: "AI-powered YouTube video summarizer.",
-		gradient: "from-purple-400 to-pink-500",
-		image: "/images/sumtube-example.png",
-		tags: ["Python", "OpenAI", "Django"],
-		githubUrl: "https://github.com/gdsakelaris/SumTube-s",
-		liveUrl: null,
-	},
-	{
-		id: 4,
 		title: "Software Sack",
 		description: "Online software marketplace with AWS backend.",
 		gradient: "from-green-400 to-blue-500",
@@ -48,25 +38,36 @@ const projects = [
 		liveUrl: null,
 	},
 	{
+		id: 4,
+		title: "SumTube AI",
+		description: "AI-powered YouTube video summarizer.",
+		gradient: "from-purple-400 to-pink-500",
+		image: "/images/sumtube.png",
+		tags: ["Python", "OpenAI", "Django"],
+		githubUrl: "https://github.com/gdsakelaris/SumTube",
+		liveUrl: null,
+	},
+	{
 		id: 5,
 		title: "Rustext",
 		description: "Keyboard-oriented command-line text editor built with Rust.",
 		gradient: "from-cyan-400 to-teal-500",
-		image: "/images/rustext.png",
+		image: "/images/Rust.png",
 		tags: ["Rust"],
 		githubUrl: "https://github.com/gdsakelaris/Rustext",
 		liveUrl: null,
 	},
 	{
 		id: 6,
-		title: "AI Finance Application",
-		description: "AI-Powered Personal Finance Dashboard.",
+		title: "Zeitgeist",
+		description: "Social media application.",
 		gradient: "from-cyan-400 to-teal-500",
-		image: "/images/finance-app.png",
-		tags: ["Python", "Django", "ML"],
-		githubUrl: "https://github.com/gdsakelaris/AI-Personal-Finance-Dashboard",
+		image: "/images/zeitgeist-1.jpg",
+		tags: ["TypeScript", "React Native", "Firebase"],
+		githubUrl: "https://github.com/gdsakelaris/Zeitgeist",
 		liveUrl: null,
 	},
+	
 ];
 
 export function MinimalistProjects() {
@@ -111,10 +112,11 @@ export function MinimalistProjects() {
 											src={project.image}
 											alt={project.title}
 											fill
+											quality={100}
+											sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
 											className="object-cover"
 										/>
 									)}
-									<div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]"></div>
 								</div>
 
 								<h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
