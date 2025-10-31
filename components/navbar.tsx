@@ -15,10 +15,7 @@ export function Navbar() {
 
 	// Dynamic navigation based on current page
 	const navigation = [
-		{ name: "Home", href: pathname === "/" ? "#home" : "/#home" },
-		{ name: "About", href: pathname === "/" ? "#about" : "/#about" },
-		{ name: "Projects", href: pathname === "/" ? "#projects" : "/#projects" },
-		{ name: "Contact", href: pathname === "/" ? "#contact" : "/#contact" },
+		{ name: "Home", href: "/" },
 		{ name: "About Me", href: "/about" },
 	];
 
@@ -27,7 +24,7 @@ export function Navbar() {
 	}, [pathname]);
 
 	return (
-		<nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
+		<nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-gray-100 backdrop-blur-md dark:border-gray-700 dark:bg-gray-800">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div className="flex h-16 justify-between">
 					<div className="flex items-center">
@@ -118,33 +115,7 @@ export function Navbar() {
 								key={item.name}
 								href={item.href}
 								className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-								onClick={(e) => {
-									// Only handle smooth scrolling for anchors on the current page
-									if (item.href.startsWith("#")) {
-										// Direct anchor link like #home (only when already on home page)
-										e.preventDefault();
-										const target = document.querySelector(item.href);
-										if (target) {
-											target.scrollIntoView({
-												behavior: "smooth",
-												block: "start",
-											});
-										}
-									} else if (item.href.includes("/#") && pathname === "/") {
-										// Cross-page anchor link but we're already on the home page
-										e.preventDefault();
-										const anchorId = item.href.split("/#")[1];
-										const target = document.querySelector(`#${anchorId}`);
-										if (target) {
-											target.scrollIntoView({
-												behavior: "smooth",
-												block: "start",
-											});
-										}
-									}
-									// For all other cases (page navigation), let Next.js Link handle it
-									setIsOpen(false);
-								}}
+								onClick={() => setIsOpen(false)}
 							>
 								{item.name}
 							</Link>

@@ -3,6 +3,7 @@ import { AboutHero } from "@/components/sections/about-hero";
 import { Education } from "@/components/sections/education";
 import { Experience } from "@/components/sections/experience";
 import { Skills } from "@/components/sections/skills";
+import { MinimalistProjects } from "@/components/sections/minimalist-projects";
 
 export const metadata: Metadata = {
 	title: "About Me - Daniel Sakelaris",
@@ -14,6 +15,7 @@ export default function AboutPage() {
 	return (
 		<>
 			<AboutHero />
+			<MinimalistProjects />
 			<Experience />
 			<Education />
 			<Skills />

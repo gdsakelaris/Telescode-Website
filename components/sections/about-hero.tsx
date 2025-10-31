@@ -41,18 +41,17 @@ export function AboutHero() {
 							</p>
 
 							<p>
-								What drives me is the intersection of technology and
-								real-world impact. Whether I'm developing a machine learning
-								model with 70% accuracy on fight outcomes or architecting cloud
-								solutions, I'm always asking: "How can this make a meaningful
-								difference?"
+								What drives me is a genuine love for building software. My projects range from 
+								practical tools to fun experiments - each one teaching me something new. Whether 
+								it's machine learning, web development, or systems programming, I'm always eager 
+								to dive into the next technical challenge.
 							</p>
 
 							<p>
-								I founded Telescode LLC to combine my technical expertise with
-								my entrepreneurial spirit - creating solutions that don't just
-								work, but truly solve problems. I believe that every project is a chance to
-								learn something new and push the boundaries of what's possible.
+								Through Telescode LLC, I channel this passion into creating solutions for clients 
+								while continuing to experiment with personal projects. It's this blend of 
+								professional work and creative exploration that keeps me excited about software 
+								engineering.
 							</p>
 						</div>
 

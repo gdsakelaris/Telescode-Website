@@ -8,7 +8,7 @@ export function MinimalistHero() {
 	return (
 		<section
 			id="home"
-			className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden"
+			className="min-h-[85vh] flex items-center justify-center pt-20 pb-10 relative overflow-hidden"
 		>
 			{/* Background Effects */}
 			<div className="fixed inset-0 -z-10">
@@ -35,8 +35,7 @@ export function MinimalistHero() {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
 					>
-						Transforming ideas into cutting-edge software solutions with modern
-						development practices
+						Software engineer specializing in full-stack development
 					</motion.p>
 
 					<motion.div
@@ -45,12 +44,12 @@ export function MinimalistHero() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.4 }}
 					>
-						<Link href="#projects">
+						<Link href="/about">
 							<Button
 								size="xl"
-								className="px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse"
+								className="px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
 							>
-								View Projects
+								About Me
 							</Button>
 						</Link>
 						<Link href="#contact">

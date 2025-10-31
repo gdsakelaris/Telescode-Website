@@ -87,12 +87,9 @@ export function MinimalistProjects() {
 					<h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
 						Featured Projects
 					</h2>
-					<p className="text-xl text-gray-600 dark:text-gray-300">
-						Showcasing innovation through code
-					</p>
 				</motion.div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
 					{projects.map((project, index) => (
 						<motion.div
 							key={project.id}
@@ -103,9 +100,9 @@ export function MinimalistProjects() {
 							viewport={{ once: true }}
 							whileHover={{ y: -8, scale: 1.02 }}
 						>
-							<div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 rounded-2xl p-6 h-full shadow-lg hover:shadow-xl transition-all duration-300">
+							<div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 rounded-xl p-3 h-full shadow-lg hover:shadow-xl transition-all duration-300">
 								<div
-									className={`aspect-video bg-gradient-to-br ${project.gradient} rounded-lg mb-6 flex items-center justify-center relative overflow-hidden`}
+									className={`aspect-video bg-gradient-to-br ${project.gradient} rounded-lg mb-2 flex items-center justify-center relative overflow-hidden`}
 								>
 									{project.image && (
 										<Image
@@ -119,15 +116,15 @@ export function MinimalistProjects() {
 									)}
 								</div>
 
-								<h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+								<h3 className="text-base font-bold mb-1.5 text-gray-900 dark:text-white">
 									{project.title}
 								</h3>
 
-								<p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+								<p className="text-gray-600 dark:text-gray-300 mb-2 text-sm leading-relaxed">
 									{project.description}
 								</p>
 
-								<div className="flex flex-wrap gap-2 mb-6">
+								<div className="flex flex-wrap gap-2 mb-2">
 									{project.tags.map((tag) => (
 										<span
 											key={tag}
