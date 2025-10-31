@@ -88,16 +88,13 @@ export function AboutHero() {
 						transition={{ duration: 0.5, delay: 0.2 }}
 					>
 						<div className="relative mx-auto h-96 w-96 overflow-hidden rounded-2xl bg-gradient-to-tr from-primary-600 to-primary-400 p-1">
-							<div className="flex h-full w-full items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-900">
-								<div className="text-center">
-									<div className="mx-auto h-32 w-32 rounded-full bg-gradient-to-tr from-primary-600 to-primary-400" />
-									<p className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-										Daniel Sakelaris
-									</p>
-									<p className="text-primary-600 dark:text-primary-400">
-										Software Engineer
-									</p>
-								</div>
+							<div className="relative h-full w-full overflow-hidden rounded-xl">
+								<Image
+									src="/images/Headshot.jpg"
+									alt="Daniel Sakelaris"
+									fill
+									className="object-cover"
+								/>
 							</div>
 						</div>
 
