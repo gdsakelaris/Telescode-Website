@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 const socialLinks = [
@@ -54,7 +55,13 @@ export function Footer() {
 					{/* Company Info */}
 					<div className="lg:col-span-1">
 						<div className="flex items-center space-x-2">
-							<div className="h-8 w-8 rounded bg-gradient-to-tr from-primary-600 to-primary-400" />
+							<Image
+								src="/images/telescode logo.png"
+								alt="Telescode Logo"
+								width={32}
+								height={32}
+								className="h-8 w-8 rounded"
+							/>
 							<span className="text-xl font-bold">Telescode</span>
 						</div>
 						<p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
