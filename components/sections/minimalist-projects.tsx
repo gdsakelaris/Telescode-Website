@@ -10,7 +10,7 @@ const projects = [
 	{
 		id: 1,
 		title: "Starscreen.net",
-		description: "Production SaaS platform for AI-powered resume screening with GPT-4o, Stripe billing, and multi-tenant architecture.",
+		description: "AI-powered resume screening.",
 		gradient: "from-primary-500 to-purple-600",
 		image: "/images/LogoText.png",
 		tags: ["Python", "FastAPI", "GPT-4o", "AWS S3", "Stripe", "Docker"],
