@@ -9,6 +9,16 @@ import { Button } from "@/components/ui/button";
 const projects = [
 	{
 		id: 1,
+		title: "Starscreen.net",
+		description: "Production SaaS platform for AI-powered resume screening with GPT-4o, Stripe billing, and multi-tenant architecture.",
+		gradient: "from-primary-500 to-purple-600",
+		image: "/images/LogoText.png",
+		tags: ["Python", "FastAPI", "GPT-4o", "AWS S3", "Stripe", "Docker"],
+		githubUrl: "https://github.com/gdsakelaris/Resume-Analyzer",
+		liveUrl: "https://starscreen.net",
+	},
+	{
+		id: 2,
 		title: "UFC Fight Prediction Model",
 		description: "Machine learning model that predicts UFC fight outcomes.",
 		gradient: "from-primary-500 to-purple-600",
@@ -16,16 +26,6 @@ const projects = [
 		tags: ["Python", "XGBoost", "ML"],
 		githubUrl: "https://github.com/gdsakelaris/UFC-Machine-Learning-Model",
 		liveUrl: "https://discord.gg/X3tc8vYx27",
-	},
-	{
-		id: 2,
-		title: "MMA Warriors",
-		description: "Pokemon-like MMA card game.",
-		gradient: "from-primary-500 to-purple-600",
-		image: "/images/MMA-Warriors.png",
-		tags: ["HTML", "CSS", "JavaScript"],
-		githubUrl: "https://github.com/gdsakelaris/MMA-Card-Game",
-		liveUrl: "https://mma-warriors.com/",
 	},
 	{
 		id: 3,
@@ -59,13 +59,13 @@ const projects = [
 	},
 	{
 		id: 6,
-		title: "Zeitgeist",
-		description: "Social media application.",
-		gradient: "from-cyan-400 to-teal-500",
-		image: "/images/zeitgeist-1.jpg",
-		tags: ["TypeScript", "React Native", "Firebase"],
-		githubUrl: "https://github.com/gdsakelaris/Zeitgeist",
-		liveUrl: null,
+		title: "MMA Warriors",
+		description: "Pokemon-like MMA card game.",
+		gradient: "from-primary-500 to-purple-600",
+		image: "/images/MMA-Warriors.png",
+		tags: ["HTML", "CSS", "JavaScript"],
+		githubUrl: "https://github.com/gdsakelaris/MMA-Card-Game",
+		liveUrl: "https://mma-warriors.com/",
 	},
 	
 ];

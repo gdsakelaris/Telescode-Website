@@ -21,7 +21,7 @@ export function MinimalistAbout() {
 					</h2>
 				</motion.div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export function MinimalistAbout() {
 						</div>
 						<h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Custom Solutions</h3>
 						<p className="text-gray-700 dark:text-gray-300">
-							Versatile development for any project - from mobile apps to automation tools
+							Versatile development for any project - from web apps to automation tools
 						</p>
 					</motion.div>
 
