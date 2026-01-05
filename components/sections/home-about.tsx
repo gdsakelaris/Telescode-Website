@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export function MinimalistAbout() {
+export function HomeAbout() {
 	return (
 		<section
 			id="about"

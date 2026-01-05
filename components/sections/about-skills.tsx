@@ -160,7 +160,7 @@ const cardVariants = {
 	},
 };
 
-export function Skills() {
+export function AboutSkills() {
 	return (
 		<section className="py-24 bg-white dark:bg-gray-950">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

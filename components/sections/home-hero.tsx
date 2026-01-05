@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export function MinimalistHero() {
+export function HomeHero() {
 	return (
 		<section
 			id="home"

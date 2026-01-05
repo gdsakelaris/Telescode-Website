@@ -1,13 +1,13 @@
-import { MinimalistHero } from "@/components/sections/minimalist-hero";
-import { MinimalistAbout } from "@/components/sections/minimalist-about";
-import { MinimalistContact } from "@/components/sections/minimalist-contact";
+import { HomeHero } from "@/components/sections/home-hero";
+import { HomeAbout } from "@/components/sections/home-about";
+import { HomeContact } from "@/components/sections/home-contact";
 
 export default function HomePage() {
 	return (
 		<>
-			<MinimalistHero />
-			<MinimalistAbout />
-			<MinimalistContact />
+			<HomeHero />
+			<HomeAbout />
+			<HomeContact />
 		</>
 	);
 }

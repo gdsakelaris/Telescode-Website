@@ -70,7 +70,7 @@ const projects = [
 	
 ];
 
-export function MinimalistProjects() {
+export function AboutProjects() {
 	return (
 		<section
 			id="projects"

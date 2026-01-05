@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function MinimalistContact() {
+export function HomeContact() {
 	return (
 		<section
 			id="contact"

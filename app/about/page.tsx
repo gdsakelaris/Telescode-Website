@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { AboutHero } from "@/components/sections/about-hero";
-import { Education } from "@/components/sections/education";
-import { Experience } from "@/components/sections/experience";
-import { Skills } from "@/components/sections/skills";
-import { MinimalistProjects } from "@/components/sections/minimalist-projects";
+import { AboutEducation } from "@/components/sections/about-education";
+import { AboutExperience } from "@/components/sections/about-experience";
+import { AboutSkills } from "@/components/sections/about-skills";
+import { AboutProjects } from "@/components/sections/about-projects";
 
 export const metadata: Metadata = {
 	title: "About Me - Daniel Sakelaris",
@@ -15,10 +15,10 @@ export default function AboutPage() {
 	return (
 		<>
 			<AboutHero />
-			<MinimalistProjects />
-			<Experience />
-			<Education />
-			<Skills />
+			<AboutProjects />
+			<AboutExperience />
+			<AboutEducation />
+			<AboutSkills />
 		</>
 	);
 }
