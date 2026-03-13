@@ -13,13 +13,15 @@ const withMDX = require('@next/mdx')({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
     mdxRs: true
   },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: ['github.com', 'raw.githubusercontent.com']
+    remotePatterns: [
+      { protocol: 'https', hostname: 'github.com' },
+      { protocol: 'https', hostname: 'raw.githubusercontent.com' }
+    ]
   },
   async headers () {
     return [

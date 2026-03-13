@@ -13,65 +13,51 @@ const personalStats = [
 
 export function AboutHero() {
 	return (
-		<section className="py-24 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-950 dark:via-blue-950 dark:to-indigo-950">
+		<section className="py-20 bg-white dark:bg-zinc-950">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="grid lg:grid-cols-2 gap-12 items-center">
+				<div className="grid lg:grid-cols-2 gap-16 items-center">
 					{/* Content */}
 					<motion.div
 						initial={{ opacity: 0, x: -20 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5 }}
 					>
-						<h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
+						<p className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4">
 							About Me
+						</p>
+						<h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
+							George Sakelaris
 						</h1>
-
-						<p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-							George Sakelaris - Software Engineer
+						<p className="mt-2 text-lg text-zinc-500 dark:text-zinc-400">
+							Full-Stack Software Engineer
 						</p>
 
-						<div className="mt-8 prose prose-lg text-gray-600 dark:text-gray-300">
+						<div className="mt-8 space-y-4 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
 							<p>
-								Hey there! I'm George (Daniel), a software engineer driven by
-								curiosity and a passion for turning complex ideas into real-world
-								solutions. My journey started with a Computer Science degree
-								from DePaul University and has taken me through everything from
-								machine learning models that predict fights to building
-								enterprise applications.
+								I'm a full-stack software engineer with a B.S. in Computer Science from DePaul University (Magna Cum Laude, 3.72 GPA). I specialize in building and operating production B2B SaaS — multi-tenant backends, async processing pipelines, cloud infrastructure, and subscription billing.
 							</p>
-
 							<p>
-								What drives me is a genuine love for building software. My projects range from 
-								practical tools to fun experiments - each one teaching me something new. Whether 
-								it's machine learning, web development, or systems programming, I'm always eager 
-								to dive into the next technical challenge.
+								As the founder of Telescode LLC, I launched Starscreen.net — an AI-powered recruiting platform built on FastAPI, PostgreSQL, Celery/Redis, and AWS. I've handled everything from architecture and code to product demos for HR stakeholders and translating feedback into roadmaps.
 							</p>
-
 							<p>
-								Through Telescode LLC, I channel this passion into creating solutions for clients 
-								while continuing to experiment with personal projects. It's this blend of 
-								professional work and creative exploration that keeps me excited about software 
-								engineering.
+								I'm driven by the end-to-end challenge: taking a product from idea to production, optimizing for performance and cost, and delivering real value. Whether it's ML prediction models, serverless e-commerce, or CLI tools in Rust — I'm always building.
 							</p>
 						</div>
 
-						<div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
+						<div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
 							{personalStats.map((stat, index) => (
 								<motion.div
 									key={stat.label}
-									className="text-center"
-									initial={{ opacity: 0, y: 20 }}
+									initial={{ opacity: 0, y: 15 }}
 									animate={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.5, delay: index * 0.1 }}
+									transition={{ duration: 0.4, delay: 0.3 + index * 0.08 }}
 								>
-									<div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900 dark:text-primary-400">
-										<stat.icon className="h-6 w-6" />
+									<div className="flex items-center gap-2 mb-1">
+										<stat.icon className="h-3.5 w-3.5 text-zinc-400" />
+										<p className="text-xs text-zinc-400 dark:text-zinc-500">{stat.label}</p>
 									</div>
-									<p className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
+									<p className="text-sm font-medium text-zinc-900 dark:text-white pl-5">
 										{stat.value}
-									</p>
-									<p className="text-xs text-gray-500 dark:text-gray-400">
-										{stat.label}
 									</p>
 								</motion.div>
 							))}
@@ -80,20 +66,18 @@ export function AboutHero() {
 
 					{/* Image */}
 					<motion.div
-						className="relative"
+						className="relative flex justify-center lg:justify-end"
 						initial={{ opacity: 0, x: 20 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}
 					>
-						<div className="relative mx-auto h-96 w-96 overflow-hidden rounded-2xl bg-gradient-to-tr from-primary-600 to-primary-400 p-1">
-							<div className="relative h-full w-full overflow-hidden rounded-xl">
-								<Image
-									src="/images/Headshot.jpg"
-									alt="Daniel Sakelaris"
-									fill
-									className="object-cover"
-								/>
-							</div>
+						<div className="relative h-80 w-80 lg:h-96 lg:w-96 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+							<Image
+								src="/images/headshot.jpg"
+								alt="George Sakelaris"
+								fill
+								className="object-cover"
+							/>
 						</div>
 					</motion.div>
 				</div>

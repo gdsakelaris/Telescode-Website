@@ -34,96 +34,71 @@ const education = [
 
 export function AboutEducation() {
 	return (
-		<section className="py-24 bg-gray-50 dark:bg-gray-900">
+		<section className="py-20 bg-white dark:bg-zinc-950">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<motion.div
-					className="text-center"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
 					viewport={{ once: true }}
+					className="mb-14"
 				>
-					<h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-						My Educational Background
+					<p className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">Education</p>
+					<h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
+						Academic Background
 					</h2>
 				</motion.div>
 
-				<div className="mt-16 space-y-12">
+				<div className="space-y-6">
 					{education.map((edu, index) => (
 						<motion.div
 							key={edu.institution}
-							className="relative"
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.2 }}
+							transition={{ duration: 0.5, delay: index * 0.1 }}
 							viewport={{ once: true }}
 						>
-							<div className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg dark:bg-gray-800">
-								<div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
-									{/* Left Column */}
+							<div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-6 md:p-8">
+								<div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
 									<div className="flex-1">
-										<div className="flex items-start">
-											<div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900 dark:text-primary-400">
-												<GraduationCap className="h-6 w-6" />
-											</div>
-
-											<div className="ml-4 flex-1">
-												<h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+										<div className="flex items-start gap-3 mb-4">
+											<GraduationCap className="h-5 w-5 text-zinc-400 mt-0.5 flex-shrink-0" />
+											<div>
+												<h3 className="text-lg font-semibold text-zinc-900 dark:text-white">
 													{edu.institution}
 												</h3>
-												<p className="text-lg text-primary-600 dark:text-primary-400">
-													{edu.degree} - {edu.major}
+												<p className="text-sm text-zinc-500 dark:text-zinc-400">
+													{edu.degree} · {edu.major}
+													{edu.concentration && ` · ${edu.concentration}`}
 												</p>
-												{edu.concentration && (
-													<p className="text-gray-600 dark:text-gray-300">
-														Concentration: {edu.concentration}
-													</p>
-												)}
-
-												<div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
-													<div className="flex items-center">
-														<Calendar className="mr-1 h-4 w-4" />
-														{edu.period}
-													</div>
-													<div className="flex items-center">
-														<MapPin className="mr-1 h-4 w-4" />
-														{edu.location}
-													</div>
+												<div className="flex gap-3 mt-1 text-xs text-zinc-400 font-mono">
+													<span>{edu.period}</span>
+													<span>·</span>
+													<span>{edu.location}</span>
 												</div>
 											</div>
 										</div>
 
-										{/* Achievements */}
-										<div className="mt-6">
-											<h4 className="font-medium text-gray-900 dark:text-white">
-												Key Achievements
-											</h4>
-											<ul className="mt-2 space-y-1">
-												{edu.achievements.map(
-													(achievement, achievementIndex) => (
-														<li
-															key={achievementIndex}
-															className="flex items-start text-sm text-gray-600 dark:text-gray-300"
-														>
-															<div className="mr-2 mt-2 h-1.5 w-1.5 rounded-full bg-primary-600 flex-shrink-0" />
-															{achievement}
-														</li>
-													)
-												)}
+										<div className="mb-4">
+											<p className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide mb-2">Achievements</p>
+											<ul className="space-y-1.5">
+												{edu.achievements.map((a, i) => (
+													<li key={i} className="flex items-start text-sm text-zinc-600 dark:text-zinc-300">
+														<span className="mr-2.5 mt-2 h-1 w-1 rounded-full bg-zinc-400 flex-shrink-0" />
+														{a}
+													</li>
+												))}
 											</ul>
 										</div>
 
-										{/* Relevant Courses */}
 										{edu.relevantCourses && (
-											<div className="mt-6">
-												<h4 className="font-medium text-gray-900 dark:text-white">
-													Relevant Coursework
-												</h4>
-												<div className="mt-3 flex flex-wrap gap-2">
+											<div>
+												<p className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide mb-2">Coursework</p>
+												<div className="flex flex-wrap gap-1.5">
 													{edu.relevantCourses.map((course) => (
 														<span
 															key={course}
-															className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300"
+															className="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 rounded text-xs font-mono"
 														>
 															{course}
 														</span>
@@ -133,29 +108,22 @@ export function AboutEducation() {
 										)}
 									</div>
 
-									{/* Right Column - Stats */}
-									<div className="mt-6 lg:mt-0 lg:ml-8">
-										<div className="space-y-4">
-											{edu.gpa && (
-												<div className="rounded-lg bg-primary-50 p-4 text-center dark:bg-primary-900/20">
-													<div className="flex items-center justify-center">
-														<Award className="mr-2 h-5 w-5 text-primary-600 dark:text-primary-400" />
-														<span className="text-sm font-medium text-primary-600 dark:text-primary-400">
-															GPA
-														</span>
-													</div>
-													<div className="mt-1 text-2xl font-bold text-primary-600 dark:text-primary-400">
-														{edu.gpa}
-													</div>
-													{edu.honors && (
-														<div className="mt-1 text-xs text-primary-700 dark:text-primary-300">
-															{edu.honors}
-														</div>
-													)}
+									{edu.gpa && (
+										<div className="lg:text-right">
+											<div className="inline-block rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 text-center min-w-[100px]">
+												<div className="flex items-center justify-center gap-1.5 mb-1">
+													<Award className="h-3.5 w-3.5 text-zinc-400" />
+													<span className="text-xs text-zinc-400 uppercase tracking-wide font-mono">GPA</span>
 												</div>
-											)}
+												<div className="text-2xl font-bold text-zinc-900 dark:text-white">
+													{edu.gpa}
+												</div>
+												{edu.honors && (
+													<div className="text-xs text-zinc-400 mt-1">{edu.honors}</div>
+												)}
+											</div>
 										</div>
-									</div>
+									)}
 								</div>
 							</div>
 						</motion.div>
